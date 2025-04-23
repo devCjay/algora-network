@@ -53,17 +53,6 @@ Use `--lan` or `--tunnel` depending on your device connection.
 
 ---
 
-## 🔐 Environment Variables
-
-Create a `.env` file in the root directory:
-
-```
-API_BASE_URL=https://api-v1.algora.network
-```
-
-> Replace with your actual environment keys.
-
----
 
 ## 📱 Building the App
 
@@ -96,9 +85,4 @@ npm install -g eas-cli
 ---
 
 
-## 📄 License
-
-MIT © [devCjay](https://github.com/devCjay)
-
----
 
