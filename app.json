@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Algora",
+    "slug": "algora",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#020e52"
+    },
+    "ios": {
+      "displayName": "Algora",
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourdomain.algora",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "statusBar": {
+        "barStyle": "light-content",
+        "backgroundColor": "#020e52"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#020e52"
+      },
+      "navigationBar": {
+        "backgroundColor": "#020e52",
+        "barStyle": "light-content",
+        "visible": true
+      },
+      "package": "com.yourdomain.algora",
+      "label": "Algora",
+      "runtimeVersion": "1.0.0"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#020e52",
+      "barStyle": "light-content"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6d8de37c-c848-46d7-84d1-e5c27b108bce"
+      }
+    },
+    "owner": "devcjay"
+  }
+}
