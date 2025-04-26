@@ -182,8 +182,6 @@ export const IMAGES = {
   file : require('../assets/images/icons/file.png'),
   user : require('../assets/images/user.png'),
   circleDashed : require('../assets/images/circle-dashed.png'),
-  logoFull : require('../assets/images/logo-full.png'),
-  logoFullWhite : require('../assets/images/logo-full-white.png'),
   thumbsUp : require('../assets/images/icons/thumbs-up.png'),
   userPic : require('../assets/images/small/pic1.jpg'),
   userPic2 : require('../assets/images/small/pic2.jpg'),
