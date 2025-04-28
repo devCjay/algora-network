@@ -15,7 +15,7 @@
     "ios": {
       "displayName": "Algora",
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourdomain.algora",
+      "bundleIdentifier": "network.algora",
       "runtimeVersion": {
         "policy": "appVersion"
       },
@@ -34,9 +34,11 @@
         "barStyle": "light-content",
         "visible": true
       },
-      "package": "com.yourdomain.algora",
+      "package": "network.algora",
       "label": "Algora",
-      "runtimeVersion": "1.0.0"
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "androidStatusBar": {
       "backgroundColor": "#020e52",

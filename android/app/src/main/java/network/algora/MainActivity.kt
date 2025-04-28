@@ -1,4 +1,4 @@
-package com.yourdomain.algora
+package network.algora
 
 import android.os.Build
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.yourdomain.algora
+package network.algora
 
 import android.app.Application
 import android.content.res.Configuration
