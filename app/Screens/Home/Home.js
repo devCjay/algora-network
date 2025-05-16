@@ -462,13 +462,7 @@ const HomeScreen = ({ navigation }) => {
                       >
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 3 }}>
 
-                          <TouchableOpacity
-                            onPress={() => handleItemPress(data.id)}
-                          >
-                            <Text style={{ ...FONTS.fontBold, color: COLORS.primary }}>Extend </Text>
-                          </TouchableOpacity>
-
-
+                        
                           <Image
                             style={{
                               height: 27,
@@ -488,10 +482,6 @@ const HomeScreen = ({ navigation }) => {
                           <Text style={{ ...FONTS.fontSm, ...FONTS.fontMedium, color: colors.title, fontSize: 13 }}>{agxAmount.toFixed(2)} AGX ~ {usdAmount.toFixed(2)} USD</Text>
                         </View>
 
-                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 2 }}>
-                          <Text style={{ ...FONTS.font, color: colors.text, fontSize: 13 }}>Expires</Text>
-                          <Text style={{ ...FONTS.fontSm, color: colors.title }}>{formatTimestamp(data.time_stamp)}</Text>
-                        </View>
 
                         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                           <Text style={{ ...FONTS.font, color: colors.text, fontSize: 13 }}>Status</Text>

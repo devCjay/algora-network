@@ -39,38 +39,35 @@ cd algora-network
 
 ```bash
 npm install
-# or
-yarn
 ```
 
-### 3. Run the app
+### 3. Login to Expo
 
 ```bash
-npx expo start
+expo login
+If you don't have an account, sign up at https://expo.dev
 ```
 
-Use `--lan` or `--tunnel` depending on your device connection.
 
----
-
-
-## 📱 Building the App
-
-Use [EAS Build](https://docs.expo.dev/build/introduction/) for production-ready builds:
+## 📱 Building the App for iOS
 
 ```bash
-eas build --platform android
-# or
-eas build --platform ios
-```
-
-Make sure you have EAS CLI installed:
-
-```bash
+# Install EAS CLI
 npm install -g eas-cli
-```
 
----
+# Configure EAS CLI
+eas build:configure
+
+# Login to Apple Developer
+eas credentials
+# Follow the prompts to set up provisioning profile and certificates.
+
+# Start Build
+eas build -p ios --profile production
+
+````
+
+## Kindly note - you need java jdk-17 installed on your machine to build the app for iOS.
 
 ## 📂 Folder Structure
 

@@ -37,17 +37,7 @@ const BannerCard = (props) => {
             }}>
                 <Text style={{...FONTS.fontSm,color:'#fff',opacity:.7,marginBottom:4}}>{props.subTitle}</Text>
                 <Text style={{...FONTS.h5,color:COLORS.white,marginBottom:10}}>{props.title}</Text>
-                <TouchableOpacity
-                    onPress={()=> {navigation.navigate("Referral")}}
-                    style={{
-                        backgroundColor:COLORS.white,
-                        borderRadius:6,
-                        paddingHorizontal:15,
-                        paddingVertical:6,
-                    }}
-                >
-                    <Text style={{...FONTS.fontSm,...FONTS.fontMedium,color:COLORS.primary}}>Start Mining</Text>
-                </TouchableOpacity>
+            
             </View>
         </LinearGradient>
     </View>

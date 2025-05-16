@@ -29,6 +29,7 @@
         <data android:scheme="network.algora"/>
         <data android:scheme="exp+algora"/>
         <data android:scheme="exp+algoranetwork"/>
+        <data android:scheme="network.algora.app"/>
       </intent-filter>
     </activity>
   </application>

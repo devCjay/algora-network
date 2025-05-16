@@ -231,7 +231,7 @@ function Sidebar() {
                 }}
             >
                 <Text style={{...FONTS.h6,color:colors.title,marginBottom:5}}>Algora Network</Text>
-                <Text style={{...FONTS.font,color:colors.text}}>App Version 1.0</Text>
+                <Text style={{...FONTS.font,color:colors.text}}>App Version 1.0.1</Text>
             </View>
         </View>
     );

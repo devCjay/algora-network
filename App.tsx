@@ -1,13 +1,14 @@
 import 'react-native-gesture-handler';
-import React, { Component } from 'react';
+import React, { useCallback } from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Platform, SafeAreaView, View } from 'react-native';
 import { useFonts } from 'expo-font';
 import Routes from './app/Navigations/Route';
 import Toast, { BaseToast } from 'react-native-toast-message';
+import * as SplashScreen from 'expo-splash-screen';
 
-
-
+// Prevent the splash screen from auto-hiding
+SplashScreen.preventAutoHideAsync();
 
 
 const App = () => {
@@ -18,6 +19,13 @@ const App = () => {
     CabinMedium: require('./app/assets/fonts/Cabin-Medium.ttf'),
     CabinBold: require('./app/assets/fonts/Cabin-Bold.ttf'),
   });
+
+
+  const onLayoutRootView = useCallback(async () => {
+    if (loaded) {
+      await SplashScreen.hideAsync(); // Hide splash screen once fonts are loaded
+    }
+  }, [loaded]);
 
 
   const toastConfig = {
@@ -54,7 +62,9 @@ const App = () => {
 
   return (
     <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1, backgroundColor: '#020e52' }}>
+      <SafeAreaView style={{ flex: 1, backgroundColor: '#020e52' }}
+      onLayout={onLayoutRootView} 
+      >
         <View style={{ flex: 1, backgroundColor: '#020e52' }}>
           <Routes />
         </View>

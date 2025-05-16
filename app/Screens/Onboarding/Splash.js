@@ -1,35 +1,36 @@
 import React from "react";
 import { 
   Image,
-  ImageBackground 
+  ImageBackground,
+  ActivityIndicator,
+  View
 } from "react-native";
 import { useTheme } from '@react-navigation/native';
-//import themeContext from "../../Utils/themeContext";
 
-const Splash = (props) => {
-  
+const Splash = () => {
   const { colors } = useTheme();
-  //const { toggleTheme } = React.useContext(themeContext);
 
   return (
-    <>
-      <ImageBackground
-        source={colors.backgroundImage}
-        style={{
-          flex:1,
-          alignItems:'center',
-          justifyContent:'center',
-        }}
-      >
+    <ImageBackground
+      source={colors.backgroundImage}
+      style={{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <View style={{ alignItems: 'center' }}>
         <Image
           style={{
-            width:170,
-            resizeMode:'contain',
+            width: 170,
+            resizeMode: 'contain',
+            marginBottom: 20,
           }}
           source={colors.logoImg}
         />
-      </ImageBackground>
-    </>
+        <ActivityIndicator size="large" color="rgb(15, 87, 255)" />
+      </View>
+    </ImageBackground>
   );
 };
 

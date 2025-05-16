@@ -23,6 +23,7 @@ import { VictoryPie } from "victory-native";
 import { GlobalStyleSheet } from "../../Utils/styleSheet";
 import { useListUserMiner } from "../../Api/minerApi";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useRate } from "../../Api/userApi";
 
 const { width } = Dimensions.get('window');
 const itemWidth = SIZES.width > SIZES.container ? (SIZES.container / 1.5) : (SIZES.width / 1.5) + 50;
@@ -67,6 +68,9 @@ const MinerScreen = () => {
     return `${day}/${month}/${year}`;
   };
 
+  const { cminer, cminerAmount } = useRate();
+  const agxAmount = cminerAmount / cminer * 60 * 24 * 31;
+  const usdAmount = agxAmount * 0.0075;
 
 
   // Save state
@@ -365,11 +369,6 @@ const MinerScreen = () => {
                       <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 3 }}>
 
 
-                        <TouchableOpacity
-                          onPress={() => handleItemPress(data.id)}
-                        >
-                          <Text style={{ ...FONTS.fontBold, color: COLORS.primary }}>Extend </Text>
-                        </TouchableOpacity>
 
                         <Image
                           style={{
@@ -387,13 +386,10 @@ const MinerScreen = () => {
 
                       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                         <Text style={{ ...FONTS.font, color: colors.text, fontSize: 13 }}>AGX per month</Text>
-                        <Text style={{ ...FONTS.fontSm, ...FONTS.fontMedium, color: colors.title, fontSize: 13 }}>{data.amount}</Text>
+                        <Text style={{ ...FONTS.fontSm, ...FONTS.fontMedium, color: colors.title, fontSize: 13 }}>{agxAmount.toFixed(2)} AGX ~ {usdAmount.toFixed(2)} USD</Text>
                       </View>
 
-                      <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginBottom: 2 }}>
-                        <Text style={{ ...FONTS.font, color: colors.text, fontSize: 13 }}>Expires</Text>
-                        <Text style={{ ...FONTS.fontSm, color: colors.title }}>{formatTimestamp(data.time_stamp)}</Text>
-                      </View>
+                  
 
                       <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                         <Text style={{ ...FONTS.font, color: colors.text, fontSize: 13 }}>Status</Text>

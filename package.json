@@ -50,7 +50,8 @@
     "react-native-uuid": "^2.0.3",
     "react-native-vector-icons": "^10.2.0",
     "react-native-web": "~0.19.13",
-    "victory-native": "^37.3.5"
+    "victory-native": "^37.3.5",
+    "expo-splash-screen": "~0.29.24"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
