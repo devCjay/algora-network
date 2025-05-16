@@ -67,7 +67,7 @@ eas build -p ios --profile production
 
 ````
 
-## Kindly note - you need java jdk-17 installed on your machine to build the app for iOS.
+## Kindly note - you need java jdk-17 installed on your machine to build the app.
 
 ## 📂 Folder Structure
 
