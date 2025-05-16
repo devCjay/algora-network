@@ -28,6 +28,8 @@ Algora is a Mining app for the algora network, built using **React Native** and 
 
 ## 🛠️ Getting Started
 
+Code Editor : [VS Code](https://code.visualstudio.com/)
+
 ### 1. Clone the repo
 
 ```bash
