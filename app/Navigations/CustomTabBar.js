@@ -118,7 +118,7 @@ const CustomTabBar = ({ state, navigation, descriptors }) => {
                       source={
                         label === "Home" ? IMAGES.home3 :
                         label === "Referral" ? IMAGES.referral2 :
-                        label === "Raffle" ? IMAGES.star :
+                        label === "Logout" ? IMAGES.logout :
                         label === "Miner" ? IMAGES.trade3 :
                         label === "Orders" ? IMAGES.wallet3 :
                         null

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { View, ActivityIndicator, Text, StyleSheet } from "react-native";
+import { View, ActivityIndicator, Text, StyleSheet, SafeAreaView } from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import { useNavigation } from "@react-navigation/native";
+import { GlobalStyleSheet } from "../../Utils/styleSheet";
+import { COLORS, FONTS, IMAGES, ICONS } from "../../Utils/theme";
 
 const LogoutScreen = () => {
   const navigation = useNavigation();
@@ -25,6 +27,7 @@ const LogoutScreen = () => {
   }, []);
 
   return (
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#020e52" }}>
     <View style={styles.container}>
       {isLoggingOut ? (
         <>
@@ -33,6 +36,8 @@ const LogoutScreen = () => {
         </>
       ) : null}
     </View>
+    </SafeAreaView>
+    
   );
 };
 
@@ -41,12 +46,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: "#020e52",
   },
   loadingText: {
     marginTop: 10,
     fontSize: 16,
-    color: "#333",
+    color: "#fff",
   },
 });
 

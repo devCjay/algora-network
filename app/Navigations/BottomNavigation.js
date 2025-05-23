@@ -8,6 +8,7 @@ import ReferralScreen from "../Screens/Referral/Referral";
 import Raffles from "../Screens/Raffle/Raffles";
 import MinerScreen from "../Screens/Miner/Miner";
 import OrderScreen from "../Screens/Order/Order";
+import LogoutScreen from "../Screens/Auth/LogoutScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -48,8 +49,8 @@ const BottomNavigation = () => {
         />
 
         <Tab.Screen
-          name="Raffle"
-          component={Raffles} 
+          name="Logout"
+          component={LogoutScreen} 
         />
 
       
