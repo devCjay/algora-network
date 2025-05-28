@@ -17,4 +17,5 @@ export const API_ENDPOINTS = {
   EXTEND_MINER: `${API_BASE_URL}/miner/extend`,
   LIST_ORDERS: `${API_BASE_URL}/order/list`,
   CREATE_ORDER: `${API_BASE_URL}/order/create`,
+  DELETE_ACCOUNT: `${API_BASE_URL}/account/delete`,
 };

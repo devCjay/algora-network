@@ -7,6 +7,7 @@ import changeNavigationBarColor from 'react-native-navigation-bar-color';
 import Onboarding from "../Screens/Onboarding/Onboarding";
 import SignIn from "../Screens/Auth/SignIn";
 import SignUp from "../Screens/Auth/SignUp";
+import DeleteAccountScreen from "../Screens/Auth/DeleteAccountSCreen";
 
 import DepositScreen from "../Screens/Wallet/Deposit";
 import WithdrawScreen from "../Screens/Wallet/Withdraw";
@@ -117,6 +118,7 @@ const StackNavigator = () => {
         <StackComponent.Screen name={"Onboarding"} component={Onboarding} />
         <StackComponent.Screen name={"SignIn"} component={SignIn} />
         <StackComponent.Screen name={"SignUp"} component={SignUp} />
+        <StackComponent.Screen name={"DeleteAccount"} component={DeleteAccountScreen} />
         
 
         {/* Protected Screens */}

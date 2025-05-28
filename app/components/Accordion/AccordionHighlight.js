@@ -7,16 +7,28 @@ import { COLORS, FONTS, SIZES } from '../../Utils/theme';
 
 const SECTIONS = [
     {
-        title: 'What is cryptocurrency?',
-        content: 'Cryptocurrency is a type of digital or virtual currency that uses cryptography for security. It operates on decentralized technology called blockchain, which ensures secure and transparent transactions.',
+        title: 'Your AGX token balance',
+        content: 'All AGX tokens mined up to this point will be permanently deleted along with your account. You will not be able to transfer, withdraw, or recover these tokens at any point in the future.',
     },
     {
-        title: 'How does cryptocurrency work?',
-        content: 'Cryptocurrencies work on blockchain technology, which is a distributed and decentralized ledger. Transactions are verified by network participants through cryptography and added to the blockchain as blocks.',
+        title: 'Ongoing mining progress',
+        content: 'All ongoing mining progress will be permanently deleted. You will not be able to recover any mined tokens or continue mining after account deletion.',
     },
     {
-        title: 'Which was the first cryptocurrency?',
-        content: 'Bitcoin (BTC) was the first cryptocurrency, created by an unknown person or group using the pseudonym Satoshi Nakamoto in 2009.',
+        title: 'Your referral and rewards history',
+        content: 'All referral and rewards history will be permanently deleted. You will not be able to recover any past referrals or rewards associated with your account.',	
+    },
+
+    ,
+    {
+        title: 'All associated account data',
+        content: 'All personal data associated with your account, including your email address, will be permanently deleted. This means you will not be able to log in or recover your account in the future.',
+    },
+
+    ,
+    {
+        title: 'Any future benefits from Algora promotions',
+        content: 'All future benefits from Algora promotions, including any potential airdrops or rewards, will be permanently forfeited. You will not be eligible for any future promotions or benefits associated with your account.',
     },
 ];
 

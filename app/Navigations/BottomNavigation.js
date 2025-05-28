@@ -9,6 +9,7 @@ import Raffles from "../Screens/Raffle/Raffles";
 import MinerScreen from "../Screens/Miner/Miner";
 import OrderScreen from "../Screens/Order/Order";
 import LogoutScreen from "../Screens/Auth/LogoutScreen";
+import DeleteAccountScreen from "../Screens/Auth/DeleteAccountSCreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -27,17 +28,18 @@ const BottomNavigation = () => {
         
       >
 
+        <Tab.Screen
+          name="Logout"
+          component={LogoutScreen} 
+        />
+
+
         <Tab.Screen 
           name="Miner" 
           component={MinerScreen} 
         />
 
 
-        <Tab.Screen 
-          name="Orders"
-          component={OrderScreen}
-        />
-       
        <Tab.Screen 
           name="Home"
           component={HomeScreen}
@@ -48,11 +50,10 @@ const BottomNavigation = () => {
           component={ReferralScreen} 
         />
 
-        <Tab.Screen
-          name="Logout"
-          component={LogoutScreen} 
+        <Tab.Screen 
+          name="Delete Acc"
+          component={DeleteAccountScreen}
         />
-
       
 
       </Tab.Navigator>

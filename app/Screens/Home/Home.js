@@ -171,12 +171,12 @@ const HomeScreen = ({ navigation }) => {
 
 
   const CardData = [
-    {
+  /*   {
       id: '1',
       icon: IMAGES.dollor,
       title: 'USD Balance',
       amount: `${new Intl.NumberFormat().format(usdbalance)}`
-    },
+    }, */
     {
       id: '2',
       icon: IMAGES.trade3,

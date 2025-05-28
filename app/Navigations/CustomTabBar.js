@@ -120,7 +120,7 @@ const CustomTabBar = ({ state, navigation, descriptors }) => {
                         label === "Referral" ? IMAGES.referral2 :
                         label === "Logout" ? IMAGES.logout :
                         label === "Miner" ? IMAGES.trade3 :
-                        label === "Orders" ? IMAGES.wallet3 :
+                        label === "Delete Acc" ? IMAGES.user2 :
                         null
                       }
                     />

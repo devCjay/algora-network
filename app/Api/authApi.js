@@ -97,3 +97,29 @@ export const checkAuthStatus = async () => {
 export const logoutUser = async () => {
   await AsyncStorage.removeItem("userToken");
 };
+
+
+// Function to delete user account
+export const deleteUserAccount = async () => {
+  try {
+    const token = await AsyncStorage.getItem("userToken");
+    const response = await fetch(API_ENDPOINTS.DELETE_ACCOUNT, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (response.ok) {
+      await AsyncStorage.removeItem("userToken");
+      return { success: true, message: "Account deleted successfully" };
+    } else {
+      const data = await response.json();
+      return { success: false, message: data.message || "Failed to delete account" };
+    }
+  } catch (error) {
+    console.error("Delete account error:", error.message);
+    return { success: false, message: "Network error" };
+  }
+}

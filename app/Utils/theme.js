@@ -15,7 +15,7 @@ export const COLORS = {
   title : "#3A354F",
   text : "#93909D",
   mycolor: "rgb(20, 89, 247)",
-  mycolor2: "rgb(16, 63, 173)"
+  mycolor2: "rgb(16, 63, 173)",
 }
 
 export const SIZES = {
